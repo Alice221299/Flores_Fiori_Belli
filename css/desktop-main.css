@@ -1,0 +1,44 @@
+.header--menu-bar {
+    display: none;
+}
+.header--menu-mobile {
+    display: inline-block;
+    position: static;
+    margin: 0;
+    width: 100%;
+    background-color: var(--main-blue);
+    border-top: none;
+    box-shadow: none;
+    padding: 10px 0;
+    text-align: center;
+}
+.header--menu-mobile li {
+    display: inline-block;
+    padding: 10px;
+}
+.header--contacts-container-2 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+    min-width: 320px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    padding-left: 10%;
+}
+.white-facebook {
+    display: inline-block;
+}
+.white-instagram {
+    display: inline-block;
+}
+.shopping-cart {
+    display: inline-block;
+}
+.header--logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    margin-left: calc(50% - 60px);
+}

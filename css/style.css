@@ -1,0 +1,590 @@
+:root {
+--main-blue: #264059;
+--button-grey: #959D93;
+--background-grey: #DFE0E5;
+--button-sand: #E0C588;
+--white: #FFFFFF
+
+}
+.inactive {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: var(--main-blue);
+    font-size: 1.4rem;
+   
+}
+.header--first-section {
+    border-bottom: #223950 1px solid;
+    padding-bottom: 20px;
+}
+.header--contacts-container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.header--contacts-container-2 {
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.header--contacts-container-1 span {
+    width: 14px;
+    height: 14px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.phone {
+    background-image: url(/icons/phone.png);
+    display: inline-block;
+}
+.mail {
+    background-image: url(/icons/email.png);
+    display: inline-block;
+}
+.white-facebook {
+    background-image: url(/icons/white-facebook.png);
+    display: none;
+}
+.white-instagram {
+    background-image: url(/icons/white-instagram.png);
+    display: none;
+}
+
+.header--contacts-container-1 a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.shopping-cart-img {
+    background-image: url(/icons/white-shopping-cart.png);
+    display: inline-block;
+}
+.shopping-cart {
+    padding-right: 10%;
+    padding-top: 15px;
+    display: none;
+}
+.header--logo {
+    background-image: url(/Images/logo.png);
+    margin: 15px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 30px);
+}
+.header--menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 10%;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    background-color: #243D54;
+    color: var(--white);
+    font-weight: 550;
+    cursor: pointer;
+}
+.header--menu-bar .menu {
+    height: 20px;
+    width: 20px;
+    background-image: url(/icons/menu-bar.png);
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header--menu-mobile {
+    margin: 20px 10% 2px 10%;
+    width: 80%;
+    background-color: var(--main-blue);
+    border-top:  #2EA3F2 2px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px 0;
+    position: absolute;
+}
+.header--menu-mobile li {
+    padding: 17px 10%;
+    list-style: none;
+}
+.header--menu-mobile a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 550;
+}
+.header--second-section {
+    width: 100%;
+    min-width: 320px;
+    background-image: linear-gradient(90deg,#264059 30%,rgba(38,64,89,0) 100%), url(/Images/main-background-flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header--second-section h1 {
+color: var(--white);
+font-size: 6rem;
+font-family: "Alice";
+font-weight: 300;
+margin-left: 10%;
+line-height: 8rem;
+padding-top: 30px;
+padding-bottom: 30px;
+max-width: 600px;
+
+}
+.header--second-section p {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 20px 10% 20px 10%;
+    font-weight: 500;
+}
+.header--second-section button {
+    margin-left: 10%;
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-grey);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.header--second-section button:hover {
+    background-color: var(--button-sand);
+    cursor: pointer;
+}
+.header--module-aviso {
+    background-color: var(--button-grey);
+    width: 100%;
+    height: fit-content;
+    padding: 30px 10%;
+    color: var(--white);
+    font-size: 1.6rem;
+    text-align: center;
+}
+.whatsapp-icon-fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-image: url(/icons/whatsapp.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+main {
+    text-align: center;
+}
+.main--first-section {
+    background-image: linear-gradient(90deg,rgba(235,235,235,0) 0%,#ebebeb 70%), url(/Images/pink-flowers-background-small.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0 70px 0;
+    margin-bottom: 100px;
+}
+.main--first-section h2 {
+    font-family: "Alice";
+    font-size: 4.2rem;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    margin: 0 10%;
+}
+.main--first-section p {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 10%;
+    margin-bottom: 50px;
+    color: #666;
+
+}
+.main--second-section h2 {
+    font-family: "Alice";
+    font-size: 4.2rem;
+    font-weight: 300;
+    margin: 0 10%;
+    margin-bottom: 15px;
+}
+.main--second-section hr {
+    color: black;
+    width: 50px;
+    margin: 0 auto;
+}
+    .main--second-section p {
+    font-size: 1.4rem;
+    margin: 20px 10%;
+    margin-bottom: 0;
+    line-height: 2.5rem;
+    color: #666;
+    font-weight: 500;
+}
+.main--second-section h3 {
+    margin: 30px auto;
+    font-family: "Alice";
+    font-size: 2rem;
+
+}
+.second-section--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+.second-section--container img {
+    width: 80%;
+    height: auto;
+}
+.main--second-section button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-grey);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+.main--second-section button:hover {
+    background-color: var(--button-sand);
+    cursor: pointer;
+}
+.main--third-section {
+    background-image:linear-gradient(90deg,rgba(235,235,235,0) 0%,#ebebeb 70%), url(/Images/grey-background-flowers.jpg);
+    width: 100%;
+    min-width: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 10%;
+    text-align: start;
+}
+.main--third-section h3 {
+    font-size: 2.5rem;
+    font-family: "Alice";
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.main--third-section span {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.main--third-section p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.main--third-section p:nth-child(3) {
+    font-size: 1.6rem;
+    color: #666;
+    margin-top: 30px;
+    line-height: 3rem;
+    font-weight: 500;
+}
+.main--fourth-section h2 {
+    font-family: "Alice";
+    font-size: 4.2rem;
+    font-weight: 300;
+    margin: 0 10%;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+.main--fourth-section hr {
+    color: black;
+    width: 50px;
+    margin: 0 auto;
+}
+.main--fourth-section p {
+    font-size: 1.6rem;
+    margin: 20px 10%;
+    line-height: 2.5rem;
+    color: #666;
+    font-weight: 500;
+}
+.fourth-section--entry{
+    margin-bottom: 50px;
+}
+.fourth-section--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+.main--fourth-section img {
+    width: 80%;
+}
+.main--fourth-section h3 {
+    margin: 30px auto;
+    margin-bottom: 20px;
+    font-family: "Alice";
+    font-size: 2rem;
+}
+.main--fourth-section button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-grey);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.main--fourth-section button:hover {
+    background-color: var(--button-sand);
+    cursor: pointer;
+}
+.main--fifth-section h2 {
+    margin: 10px 10%;
+    font-family: "Alice";
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+.fifth-section--container {
+    display: flex;
+    gap: 20px;
+    height: fit-content;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.fifth-section--container div {
+    width: 80%;
+    border: #d8d8d8 1px solid;
+    margin: 30px auto;
+    position: relative;
+    scroll-snap-align: center;
+    min-width: 250px;
+    max-width: 350px;
+}
+.fifth-section--container img {
+    width: 100%;
+}
+.fifth-section--container p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    
+}
+.fifth-section--container p:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 2rem;
+    font-family: "Alice";
+}
+.fifth-section--container p:nth-child(3) {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.fifth-section--container p:nth-child(4) {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+.fifth-section--container a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.main--sixth-section {
+    background-color: var(--background-grey);
+    padding: 100px 10%;
+    text-align: start;
+    margin-top: 50px;
+}
+.main--sixth-section h2 {
+    font-family: "Alice";
+    font-size: 4.2rem;
+    font-weight: 300;
+    line-height: 5.2rem;
+    margin-bottom: 20px;
+}
+.main--sixth-section hr {
+    color: black;
+    width: 50px;
+}
+.main--sixth-section p {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 3rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.main--sixth-section img {
+    width: 100%;
+    margin: 30px 0;
+}
+.main--sixth-section label {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.main--sixth-section input {
+    background-color: var(--background-grey);
+    color: #C4C5C9;
+    border: #C4C5C9 1px solid;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+.main--sixth-section textarea {
+    background-color: var(--background-grey);
+    border: #C4C5C9 1px solid;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: #C4C5C9;
+}
+.main--sixth-section .form-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-sand);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: calc(100% - 200px);
+}
+.form-button + p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+    font-family: "Alice";
+}
+.form-button:hover{
+    cursor: pointer;
+    width: 216px;
+    margin-left: calc(100% - 216px);
+    transition: all 300ms;
+}
+.form-button:hover span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.arrow {
+    background-image: url(/icons/right-arrow.png);
+}
+.form-button span{
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main--sixth-section .whatsapp-button {
+    width: 150px;
+    height: 50px;
+    background-color: #25D366;
+    border: var(--white) 2px solid;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: calc(50% - 75px);
+}
+.whatsapp-button:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #afafaf,
+    -10px -10px 20px #ffffff;
+}
+.footer--first-section {
+    background-color: #222222;
+    padding: 40px;
+}
+.footer--first-section a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.footer--first-section li {
+    color: #2EA3F2;
+    font-size: large;
+}
+.footer--second-section {
+    background-color: #171717;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer--second-section .facebook-icon {
+    background-image: url(/icons/facebook.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+
+}
+.facebook-icon:hover, .instagram-icon:hover {
+    cursor: pointer;
+}
+.footer--second-section .instagram-icon {
+    background-image: url(/icons/instagram.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.footer--second-section p{
+    color: var(--button-grey);
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin: 0 20px 10px 20px;
+}
