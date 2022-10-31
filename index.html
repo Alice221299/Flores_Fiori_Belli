@@ -10,36 +10,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/desktop-main.css" media="(min-width: 1024px)"> 
 </head>
 <body>
     <header>
         <section class="header--first-section">
-            <div class="header--contacts-container">
-                <div>
-                    <span class="phone"></span>
-                    <a href="">+57 301 7771589</a>
-                </div>
-                <div>
-                    <span class="mail"></span>
-                    <a href="">contacto@floresfioribelli.com</a>
+            <div class="header--contacts-container-1">
+                <div class="header--contacts-container-2"> 
+                    <div>
+                      <span class="phone"></span>
+                      <a href="">+57 301 7771589</a>
+                    </div>
+                    
+                    <div> 
+                      <span class="mail"></span>
+                      <a href="">contacto@floresfioribelli.com</a>
+                    </div>
+                    <span class="white-facebook"></span> 
+                    <span class="white-instagram"></span>
                 </div>
                
+                <div class="shopping-cart">
+                    <span class="shopping-cart-img"></span>
+                    <a href="">0 elementos</a>
+                </div>
             </div>
         <span class="header--logo">
         </span>
         <div class="header--menu-bar">
                 <p>Seleccionar página</p>
                 <span class="menu"></span>
-            </div>
-        </section>
+        </div>
+       <div class="header--menu-mobile inactive">
+            <ul>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Catálogo</a>
+                </li> 
+                <li>
+                    <a href="">Cómo funciona</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li> 
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+            </ul>
+        </div>
+        </section> 
+        
         <section class="header--second-section">
                <h1>Arreglos con amor para los que amas</h1>
                <p>Flores a Domicilio en Bogotá Norte, Chía, Cajica y Cota</p>
                <button>Ver arreglos</button>
         </section>
         <div class="header--module-aviso">
-               <p>AVISO: Todos los pedidos serán finalizados por WhatsApp</p>
+               <p>Envíos gratis en Chía, Cajicá, Cota, Zipaquira y Bogotá Norte</p>
         </div>
         <span class="whatsapp-icon-fixed"></span>
     </header>
@@ -157,7 +187,7 @@
                     <textarea name="help" id="help" cols="30" rows="7" placeholder="Cómo podemos ayudarte..."></textarea>
                 </label>
             </form>
-            <button class="form-button">Enviar solicitud</button>
+            <button class="form-button">Enviar solicitud <span class="arrow"></span></button>
             <p>Haz tu pedido por chat</p>
             <button class="whatsapp-button">Whatsapp</button>
         </section>
@@ -176,6 +206,6 @@
            <p>Derechos reservados Flores Fiori Belli 2021 - Desarrollo y posicionamiento por BluKaizen Media.</p>
         </section>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>
