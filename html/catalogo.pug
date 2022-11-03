@@ -1,0 +1,69 @@
+mixin ordenar 
+  .ordenar
+    ul 
+      li Orden por defecto 
+      li Orden por popularidad 
+      li Orden por precio: bajo a alto 
+      li Orden por precio: alto a bajo 
+mixin box(image, name, price)
+  .box
+    figure 
+      img(src="/Images/"+image, alt=name)
+    p.name=name 
+    p.price=price
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/catalogo.css")
+    title Catálogo
+  body 
+    header 
+      section.header_first-section
+        .header_contacts-container-main 
+          .header_contacts-container-left
+            div 
+              span.phone 
+              a(href="") +57 301 7771589 
+            div 
+              span.mail 
+              a(href="") contacto@floresfioribelli.com
+            span.facebook 
+            span.instagram 
+          .shopping-cart 
+            span.shopping-cart_img 
+            a(href="") 0 elementos
+        span.header_logo 
+        .header_menu-bar 
+          p Seleccionar página
+          span.menu 
+        .header_menu-mobile.inactive
+          a(href="") Inicio 
+          a(href="") Catálogo
+          a(href="") Cómo funciona
+          a(href="") Blog 
+          a(href="") Nosotros 
+      section.header_second-section 
+        h1 Catálogo
+        p Sólo usamos flores frescas en nuestra colección de arreglos diseñados pensando en ti
+      .header_aviso 
+        p Envío gratuito en todos los arreglos y bouquets
+    main 
+      main_first-section 
+        .arreglos 
+          h2 Arreglos
+          .info 
+            p Mostrando los 9 resultados
+            +ordenar 
+          +box("black-flowers.jpg", "Cascata", "$199,000")
+          +box("bouquet-pink.jpg", "Ringraziamento", "$132,000")
+          +box("different-roses.jpg", "Piccola Primavera", "$123,000")
+          +box()
+          +box()
+          +box()
+          +box()
+          +box()
+          +box()
+
