@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Alice221299/Flores_Fiori_Belli#readme",
   "dependencies": {
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
   }
 }
